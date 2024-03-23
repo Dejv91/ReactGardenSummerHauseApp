@@ -1,0 +1,128 @@
+body {
+    margin: 20px;
+    padding: 0;
+    background-color: #333;
+    color: #FFF;
+}
+.led{
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid red;
+    background-color: aquamarine;
+    cursor: pointer;
+}
+a {
+    color: #d71b1b;
+}
+
+.container_slider {
+    border: 3px solid #314084;
+    border-radius: 8px;
+    background-color: rgba(24, 26, 29, 0.681);
+    padding: 20px;
+    /* width: 97%; */
+    width: 550px;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* justify-content: center; */
+    align-items: center;
+    transition: all 1s;    /*aby bylo widoczne przejscie miedzy blokowaniem elementow po nadaniu klasy inActive    */
+
+}
+
+/* .container_slider_buttons{
+    
+        display: flex;
+        flex-wrap: nowrap;
+        width:  30%;
+        height: 550px;
+        position: relative;
+    right: 0;
+    top: 0;
+    background-color: aqua;
+}
+button {
+
+    width: 150px;
+    height: 35px;
+
+    right: 10px;
+    top: 10px;
+} */
+
+.slider {
+    background-color: #333;
+    border-radius: 8px;
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 250px;
+    align-items: center;
+    text-align: center;
+}
+/* .inActive{
+   background-color: #ffffff;
+   z-index: -1;
+} */
+
+ div.slider.inActive {
+    visibility: hidden;
+}
+div.container_slider.inActive {
+    background-color: #ffffff5b;
+}
+
+
+.slider_box {
+    display: flex;
+    flex-wrap: nowrap;
+    width:  80%;
+    height: 100%;
+    position: relative;
+}
+
+.slider_box_check {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.slider_box_value {
+    position: absolute;
+    right: -18px;
+    top: -18px;
+}
+
+.slider_box_item {
+    position: absolute;
+    left: -3px;
+    appearance: slider-vertical;
+    width: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.slider_box_color_input {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 45px;
+    left: 40px;
+    background-color: silver;
+
+
+}
+.slider_box_inputSwitch {
+    position: absolute;
+    /* width: 50px; */
+    /* height: 50px; */
+    top: 85px;
+    left: 40px;
+    /* background-color: silver; */
+
+}

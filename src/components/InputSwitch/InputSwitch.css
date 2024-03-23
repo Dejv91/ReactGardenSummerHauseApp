@@ -1,0 +1,49 @@
+input.inputSwitch_item[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label.inputSwitch_item {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label.inputSwitch_item.Active:after {    /*klasa active czyli wykona sie tylko gdy bedzie aktywny*/
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 21px;
+	height: 21px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+input.inputSwitch_item:checked + label.inputSwitch_item {
+	background: #55a5da;
+}
+
+input.inputSwitch_item:checked + label.inputSwitch_item:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+/* label:active:after {
+	width: 100px;
+} */
+
+/* // centering */
+/* body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+} */
