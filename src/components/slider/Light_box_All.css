@@ -21,12 +21,12 @@
     position: absolute;
     background-color: #333;
     border-radius: 8px;
-    margin: 3px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     
-    width: 80%;
-    height: 80%;
+    width: 72%;
+    height: 95%;
     align-items: center;
     text-align: center;
 }

@@ -17,41 +17,56 @@ a {
 }
 
 .container_slider {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+
     border: 3px solid #314084;
     border-radius: 8px;
     background-color: rgba(24, 26, 29, 0.681);
     padding: 20px;
     /* width: 97%; */
-    width: 550px;
+    width: 630px;
+    height: 800px;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
+    
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* gap: 5px; */
     /* justify-content: center; */
     align-items: center;
     transition: all 1s;    /*aby bylo widoczne przejscie miedzy blokowaniem elementow po nadaniu klasy inActive    */
-
+    /* position: relative; */
 }
 
-/* .container_slider_buttons{
-    
-        display: flex;
-        flex-wrap: nowrap;
-        width:  30%;
-        height: 550px;
-        position: relative;
+.container_slider_buttons{
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    grid-area: 1 / 4 / 4 / 5;
+    width:  150px;
+    height: 100%;
+    /* position: absolute; */
     right: 0;
     top: 0;
-    background-color: aqua;
+    background-color: rgb(33, 74, 74);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
 }
-button {
 
-    width: 150px;
+button {
+   /* display: block; */
+   margin-top: 20px;
+    width: 100px;
     height: 35px;
 
-    right: 10px;
-    top: 10px;
-} */
+    /* right: 10px; */
+    /* top: 10px; */
+}
 
 .slider {
     background-color: #333;
