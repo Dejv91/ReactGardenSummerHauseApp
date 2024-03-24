@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactGardenSummerHauseApp/static/css/main.17ecb578.css",
+    "main.js": "/ReactGardenSummerHauseApp/static/js/main.82c9a176.js",
+    "static/js/453.52bccb88.chunk.js": "/ReactGardenSummerHauseApp/static/js/453.52bccb88.chunk.js",
+    "index.html": "/ReactGardenSummerHauseApp/index.html",
+    "main.17ecb578.css.map": "/ReactGardenSummerHauseApp/static/css/main.17ecb578.css.map",
+    "main.82c9a176.js.map": "/ReactGardenSummerHauseApp/static/js/main.82c9a176.js.map",
+    "453.52bccb88.chunk.js.map": "/ReactGardenSummerHauseApp/static/js/453.52bccb88.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.17ecb578.css",
+    "static/js/main.82c9a176.js"
+  ]
+}
